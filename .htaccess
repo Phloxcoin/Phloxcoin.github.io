@@ -1,9 +1,9 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.phloxcoin.xyz [NC]
+RewriteCond %{HTTPS_HOST} ^www.phloxcoin.xyz [NC]
 RewriteRule ^(.*)$ https://phloxcoin.xyz/$1 [L,R=301,NC]
 
 #Redirect to www location with subdirectory
 RewriteEngine on
 RewriteBase /
-RewriteCond %{HTTP_HOST} www.phloxcoin.xyz [NC]
-RewriteRule ^(.*)$ http://phloxcoin.xyz/index.html [R=301,NC]
+RewriteCond %{HTTPS_HOST} www.phloxcoin.xyz [NC]
+RewriteRule ^(.*)$ https://phloxcoin.xyz/index.html [R=301,NC]

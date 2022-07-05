@@ -205,7 +205,16 @@
                               <p> Step 1: Send the PLX to (Phloxcoin: Deployer adress)</p>
                               <p><b style="color:gold;">0x28bd777abf927053d3f1c24ef2ab93cc6e1a72ba</b></p>
 <a onclick="setClipboard('0x28bd777abF927053d3f1C24ef2aB93cc6E1a72Ba')" class="rocket-btn rocket-btn-animated-icon" style="width: 90%;"><span class="rocket-btn-icon-wrap"><i class="fa fa-copy" aria-hidden="true"></i></span> <span class="rocket-btn-text-wrap">Copy adress</span></a>
-								
+	<script >
+	function setClipboard(value) {
+    var tempInput = document.createElement("input");
+    tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+    tempInput.value = value;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);}
+	</script>
 
 							  <p>Step 2: Send Transaction link for phloxcoin@gmail.com&nbsp;</p>
 							  <p style="color:red;">
@@ -226,6 +235,25 @@
         <h6>PLX Staked so far</h6>
       </div>
     </center>
+<script>						
+const counters = document.querySelectorAll(".count");
+const speed = 1000;
+counters.forEach((counter) => {
+const updateCount = () => {
+const target = parseInt(+counter.getAttribute("data-target"));
+const count = parseInt(+counter.innerText);
+const increment = Math.trunc(target / speed);
+console.log(increment);
+    if (count < target) {
+      counter.innerText = count + increment;
+      setTimeout(updateCount, 1);
+    } else {
+      count.innerText = target;
+    }
+  };
+  updateCount();
+});
+</script>	
 					</div>
 				</div>
 			</div>

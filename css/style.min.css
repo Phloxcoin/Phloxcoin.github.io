@@ -2140,7 +2140,7 @@ background-color : #ebcccc;
 min-height : 0.01%;
 overflow-x : auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width : 1200px ){
 .table-responsive {
 width : 100%;
 margin-bottom : 15px;
@@ -3612,7 +3612,7 @@ padding-top : 10px;
 padding-bottom : 10px;
 line-height : 20px;
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .navbar-nav .open .dropdown-menu {
 position : static;
 float : none;
@@ -3700,7 +3700,7 @@ margin-left : 0;
 top : 0;
 }
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .navbar-form .form-group {
 margin-bottom : 5px;
 }
@@ -3811,7 +3811,7 @@ border-color : #e7e7e7;
 color : #555;
 background-color : #e7e7e7;
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
 color : #777;
 }
@@ -3888,7 +3888,7 @@ border-color : #101010;
 color : #fff;
 background-color : #080808;
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
 border-color : #080808;
 }
@@ -5422,7 +5422,7 @@ display : none !important ;
 .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
 display : none !important ;
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .visible-xs {
 display : block !important ;
 }
@@ -5436,17 +5436,17 @@ td.visible-xs, th.visible-xs {
 display : table-cell !important ;
 }
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .visible-xs-block {
 display : block !important ;
 }
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .visible-xs-inline {
 display : inline !important ;
 }
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .visible-xs-inline-block {
 display : inline-block !important ;
 }
@@ -5538,7 +5538,7 @@ display : inline !important ;
 display : inline-block !important ;
 }
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 .hidden-xs {
 display : none !important ;
 }
@@ -9686,7 +9686,7 @@ font-weight : 700;
 color : #6e549b;
 }
 .responsive-img {
-width : 85%;
+width : 75%;
 height : auto;
 padding : 30px;
 }
@@ -9703,7 +9703,7 @@ background-color : #f7f5f9;
 position : relative;
 z-index : 10;
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 main {
 margin-top : 52px;
 }
@@ -9936,7 +9936,7 @@ font-style : italic;
 .text-strike-through {
 text-decoration : line-through;
 }
-@media (max-width: 992px) {
+@media (max-width : 1100px ){
 .text-sm-center {
 text-align : center;
 }
@@ -10008,12 +10008,6 @@ margin-right : 3px;
 }
 .round-form .round-form-wrap input:active, .round-form .round-form-wrap input:focus, .round-form .round-form-wrap input:hover {
 outline : 0;
-}
-@media (max-width: 768px) {
-.round-form .round-form-wrap input {
-width : 100% !important ;
-margin-right : 0 !important ;
-}
 }
 .round-form .round-form-wrap input.large {
 width : 700px;
@@ -10859,7 +10853,7 @@ border-top : 1px solid #f0f0f0;
 header.scrolled ul.menu > li > a {
 padding : 26px 16px;
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 header.scrolled ul.menu > li > a {
 padding : 16px 20px;
 }
@@ -10873,7 +10867,7 @@ margin : 15px 20px auto 16px;
 header.scrolled .logo {
 margin : 17px 30px 17px 15px;
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 header {
 padding : 0 20px;
 }
@@ -11193,7 +11187,7 @@ top : 0;
 left : 0;
 z-index : 1;
 }
-@media (max-width: 992px) {
+@media (max-width : 1100px ){
 section.features-section .features-phone .features-phone-image img {
 position : relative;
 height : 600px;
@@ -11258,7 +11252,7 @@ section#hero {
 overflow : hidden;
 position : relative;
 }
-@media (max-width: 767px) {
+@media (max-width : 1200px ){
 section#hero {
 height : 100% !important ;
 }
@@ -12250,7 +12244,7 @@ display : inline-block;
 border-top : 2px solid rgb(130, 130, 130, 0.5);
 border-radius : 2px;
 }
-@media (max-width: 992px) {
+@media (max-width : 1100px ){
 .portfolio-section .portfolio-filters > ul {
 border-top : none;
 }
@@ -12288,7 +12282,7 @@ margin-bottom : 10px;
 box-shadow : 0 3px 10px 0 rgb(244, 108, 147, 0.75);
 opacity : 0;
 }
-@media (max-width: 992px) {
+@media (max-width : 1100px ){
 .portfolio-section .portfolio-filters > ul > li.portfolio-filter:before {
 display : none;
 }
@@ -12818,6 +12812,3 @@ progress{
   width: 300px;  
   height: 5px;  
 } 
-
-
-

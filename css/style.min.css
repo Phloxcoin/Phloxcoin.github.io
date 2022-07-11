@@ -12825,3 +12825,10 @@ progress{
     font-size: 3.5vw;
   }
 }
+@media screen and (max-width: 768px) {
+  img.mainpic {
+    margin-top: 150px;
+	  width: 100%;
+	  height: auto;
+  }
+}

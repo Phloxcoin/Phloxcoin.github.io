@@ -1,19 +1,40 @@
 ﻿<!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Phloxcoin</title>
-    <meta name="keywords" content="Multi Sends, free send , free distribute , free crypto , multiple , MultiSends , multiple wallet addresses">
-    <meta name="description" content="Phloxcoin free distribute BNB and BEP20 tokens to multiple wallet addresses at once with a single transaction fee. MultiSends saves you an incredible amount of time, energy and money in distributing BEP20 assets.">
-	<meta name="author" content="">
+	<title>Send token to Multiple BEP20 Addresses</title>
+	<meta name="keywords" content="Multi Sends, free send , free distribute , free crypto , multiple , MultiSends , multiple wallet addresses">
+	<meta name="description" content="Phloxcoin free distribute BNB and BEP20 tokens to multiple wallet addresses at once with a single transaction fee. MultiSends saves you an incredible amount of time, energy and money in distributing BEP20 assets.">
+	<meta name="author" content="Phloxcoin">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <link rel="icon" href="phloxcoin.ico" type="image/x-icon">
     <link rel="shortcut icon" href="phloxcoin.ico" type="image/x-icon">
-	<link rel="preconnect" href="https://fonts.googleapis.com/">
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-	<link href="css/style.css" rel="stylesheet">
-	
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--	<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--	<meta name="theme-color" content="#e8f1ff">-->
+	<!--Plugin-css-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/plugin.min.css" rel="stylesheet">
+	<link href="css/all.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+<!--
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+		rel="stylesheet">
+-->
+	<!-- Template-style-->
 
+	<script src="#"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+	
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVPXE2FE6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -23,38 +44,156 @@
   gtag('config', 'G-FZVPXE2FE6');
 </script>
 	
-	<div class="navbar">
-  <a class="logo"><img src="./img/logo.png" alt="Rocket" class="top-logo" width="200px"> </a>
-  <a href="https://phloxcoin.xyz/#">Home</a>
-  <a href="https://phloxcoin.xyz/#presale">Presale</a>
-  <a href="https://phloxcoin.xyz/img/Phloxcoin%20White%20Paper.pdf" target="_blank">White Paper</a>
-  <a href="https://phloxcoin.xyz/#PhloxcoinChart">Chart</a>
-					<a href="https://phloxcoin.xyz/#presale" class="box"><span class="rocket"><i class="fa fa-rocket" aria-hidden="true"></i></span>
-				    <span class="rocket-btn-text-wrap">Claim free PLX</span></a>
+</head>
 
-    </div>
+<body>
+	<!--Start Preloader -->
+<!--
+	<div class="onloadpage" id="page-load">
+		<div class="loader-div">
+			<div class="on-img"><img src="img/loader_1.gif" alt="Logo" class="img-fluid" /><span>Loading Please
+					Wait...</span></div>
+		</div>
+	</div>
+-->
+	<!--End Preloader -->
 
-	</head>
+	<!--Start Header-->
+<header class="ree-header fixed-top">
+		<div class="container-fluid m-p-l-r-0">
+			<div class="menu-header horzontl">
+				<div class="menu-logo">
+					<div class="dskt-logo"><a class="nav-brand"> <img src="img/logo.png"
+								alt="Logo" class="ree-logo" width="240px" /> </a> </div>
+				</div>
+				<div class="ree-nav" role="navigation">
+					<ul class="nav-list">
+						<li><a href="https://phloxcoin.xyz/#" class="menu-links">Home</a></li>
+						<li><a href="https://phloxcoin.xyz/#presale" class="menu-links">Sale</a></li>
+						<li><a href="https://phloxcoin.xyz/img/Phloxcoin%20White%20Paper.pdf" class="menu-links" target="_blank">White Paper</a></li>
+						<li><a href="https://phloxcoin.xyz/#PhloxcoinChart" class="menu-links">Chart</a></li>
+						<li><a href="send-token-to-multiple-addresses.html" class="menu-links">disperse</a></li>
+				  </ul>
+				</div>
+				<div class="ree-nav-cta">
+					<ul>
+						<li><a href="https://bscscan.com/address/0xd1afd2cfdd9d168bb48b7b5acdffe4c1ae13b753"
+								target="_blank" class="ree-btn ree-btn0 ree-btn-grdt2">Smart Contract&nbsp;&nbsp;<img src="img/BscScan-logo-circle.webp" alt="BSCSCAN"  width="30px"></a> </li>
+					</ul>
+				</div>
+				<div class="mobile-menu2">
+					<ul class="mob-nav2">
+						<li><a href="https://bscscan.com/address/0xd1afd2cfdd9d168bb48b7b5acdffe4c1ae13b753"
+								target="_blank" class="ree-btn2"><img src="img/BscScan-logo-circle.webp" alt="BSCSCAN" width="30px"></a></li>
+						<li class="navm-"><a class="toggle" href="#"> <span></span> </a> </li>
+					</ul>
+				</div>
+				<nav id="main-nav">
+					<ul>
+						<li><a href="https://phloxcoin.xyz/#" class="menu-links">Home</a></li>
+						<li><a href="https://phloxcoin.xyz/#presale" class="menu-links">Sale</a></li>
+						<li><a href="https://phloxcoin.xyz/img/Phloxcoin%20White%20Paper.pdf" class="menu-links" target="_blank">White Paper</a></li>
+						<li><a href="https://phloxcoin.xyz/#PhloxcoinChart" class="menu-links">Chart</a></li>
+						<li><a href="send-token-to-multiple-addresses.html" class="menu-links">disperse</a></li>
+					</ul>
 
-
-<body >
-							<center style="margin-top:90px;"><h1>Send token and BEP20 Tokens to Multiple BEP20 Addresses</h1></center>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+	<!--start send-token-to-multiple-addresses Section  -->
+<section class="r-bg-i sec-pad" id="benefits">
+  <div class="container">
+	<div class="row justify-content-center">
+				<div class="col-lg-11">
+					<div class="sec-heading text-center pera-block">
+						<h2>Send token and BEP20 Tokens to Multiple BEP20 Addresses</h2>
 						<p>With Multisend, you can distribute BNB and BEP20 tokens to multiple wallet addresses at once with a single transaction fee. MultiSends saves you an incredible amount of time, energy and money in distributing BEP20 assets
 						</p>
+					</div>
+				</div>
+								<a href="https://phloxcoin.xyz/#presale" class="ree-btn  ree-btn-grdt1 mt40 mw-80" data-aos="fade-in"
+							data-aos-delay="800">Claim PLX Now 
+						</a>
+			</div>
+</div>
+	</section>
+	<!--send-token-to-multiple-addresses Section End-->
   <article>
     <disperse-app></disperse-app>
 </article>
-	<script src="./js/multiple.js"></script>
-</body>
+<script src="./js/multiple.js"></script>
+	<!--start footer -->
+	<footer class="footer-a">
+		<div class="footer-fist-row">
 
-	<footer>
-
-			<div class="bottom-bar">
+			<div class="footer-abts pt80 pb80">
 				<div class="container">
-					<div class="row text-align-center">© Copyright 2022 - Phloxcoin. All Rights Reserved.</div>
-					<div class="row text-align-center" >Email : Phloxcoin@gmail.com</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="footer-ree-lg text-center">
+								<div class="footer-logo offset-xl-4 col-xl-4">
+									<a href="#"> <img src="img/logo.png" alt="reeven" class="img"
+											width="100%"> </a>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="col-lg-8 mt40">
+
+							<div class="ref-links">
+								<a href="https://bscscan.com/address/0xd1afd2cfdd9d168bb48b7b5acdffe4c1ae13b753" target="_blank">Bscscan</a>
+								<a href="https://t.me/Phloxcoin" target="_blank">Telegram</a>
+								<a href="https://twitter.com/Phloxcoin" target="_blank">twitter</a>
+<!--
+			<a class="social-icon" href="https://t.me/Phloxcoin" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+			<a class="social-icon" href="https://twitter.com/Phloxcoin" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+			<a class="social-icon" href="https://www.reddit.com/user/Phloxcoin" target="_blank"><i class="fa fa-reddit-alien fa-2x"></i></a>
+			<a class="social-icon" href="https://www.youtube.com/Phloxcoin" target="_blank"><i class="fa fa-youtube  fa-2x "></i></a>
+-->
+
+							</div>
+							<div class="ref-links">&nbsp;</div>
+									<div style="text-align:center"> <a class="twitter-timeline" data-width="800" data-height="300" data-link-color="#19CF86" href="https://twitter.com/Phloxcoin">Tweets by Phloxcoin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+						</div>
+
+					</div>
 				</div>
 			</div>
-		
+			<div class="container ft-cpy">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="ft-copyright">
+						  <p> &nbsp;Copyright © 2022 Phloxcoin. All rights reserved.</p>
+						  <p>Email: Phloxcoin@gmail.com&nbsp;</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+      
 	</footer>
-	</html>
+	<!-- end footer -->
+
+	<!--All js files-->
+<!--	<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>-->
+	<script src="js/modernizr-3.5.0.min.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/app.bundle.js"></script>
+	<script src="js/tiltjs.js"></script>
+	<script src="js/web3.js"></script>
+	<script src="js/countDown.js"></script>
+	<script src="js/apps.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

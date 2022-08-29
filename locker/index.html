@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://cedilla.network/lock/ -->
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Liquidity Locker</title>
+	<meta name="keywords" content="Multi Sends, free send , free distribute , free crypto , multiple , MultiSends , multiple wallet addresses">
+	<meta name="description" content="Phloxcoin free distribute BNB and BEP20 tokens to multiple wallet addresses at once with a single transaction fee. MultiSends saves you an incredible amount of time, energy and money in distributing BEP20 assets.">
+	<meta name="author" content="Phloxcoin">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="icon" href="../phloxcoin.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../phloxcoin.ico" type="image/x-icon">
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--	<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--	<meta name="theme-color" content="#e8f1ff">-->
+	<!--Plugin-css-->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/plugin.min.css" rel="stylesheet">
+	<link href="../css/all.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lock your liquidity pair/tokens by verified contract. Search liquidity or token locks. Lock liquidity on PancakeSwap">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="Cedilla">
+<meta name="twitter:title" content="Cedilla Locker">
+<meta name="twitter:description" content="Lock liquidity now! Get your certificate fast and affordable">
+<meta name="twitter:image" content="https://cedilla.network/wp-content/uploads/2022/07/Cedilla_Locker_Logo.png">
+<link rel="stylesheet" type="text/css" href="./styles.css">
+<link rel="stylesheet" type="text/css" href="./loading-bar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./css2" rel="stylesheet">
+<script src="./web3.min.js" type="text/javascript"></script>
+<script src="./moralis.js" type="text/javascript"></script>
+<script src="./sweetalert2@11" type="text/javascript"></script>
+<!--
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+		rel="stylesheet">
+-->
+	<!-- Template-style-->
+
+	<script src="#"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZVPXE2FE6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FZVPXE2FE6');
+</script>
+	
+</head>
+		
+<body>
+<div class="col-xl-6" style="width:100%; height:auto; margin:1% auto;float:left;">
+<a style="color:#FFFFFF" href="https://phloxcoin.xyz/"><img height="42px" class="cedillalogo" src="../img/logo.png"></a>
+<div class="connectdiv"><div style="position:relative; top:1px;">
+<input class="connectbutton" type="button" id="btn-login" value="Connect">
+</div>
+</div>
+</div>
+<div class="wloggedin">
+<div align="right"><font style="position:relative; top:5px;font-weight:bold;" id="walletaddr"></font></div>
+<br>
+<div align="right"><font style="position:relative; top:5px;font-weight:bold;" id="managemenu"></font></div>
+</div>
+<hr style="height:0.01px" width="100%" color="#1d81c4">
+<center><div align="center" class="swaparea">
+<h3 style="color:#00D111">Explore Locks</h3>
+Search liquidity or token locks by contract
+<hr style="height:0.01px" width="100%" color="#1d81c4">
+<br>
+<form action="https://phloxcoin.xyz/locker/" method="GET">
+<input class="paircontract" onkeyup="if (!window.__cfRLUnblockHandlers) return false; " id="vaultcontract" type="text" value="" name="token" placeholder="Enter pair or token address" autocomplete="off" required="required">
+<input class="gobutton" type="submit" id="search" value="Go">
+</form>
+<br><br>
+<a target="_blank" id="explink"><img width="16px" height="16px" src="./bscscan.png"> <font id="tokenmeta"></font></a><font id="ifpair"></font>
+<font id="lockit"></font>
+<h2>Vaults</h2>
+<div style="overflow-x:auto;">
+<table style="column-rule-width: inherit" id="locks">
+<thead>
+<tr>
+<th>Locked Amount</th>
+<th>Unlock Date</th>
+<th>Percent</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody id="vaultstbody">
+</tbody>
+</table>
+</div>
+<input type="hidden" id="ethwallet" value="">
+<input type="hidden" id="maxbalance" value="">
+<input type="hidden" id="vaultnum" value="">
+<input type="hidden" id="decimals" value="">
+<input type="hidden" id="totalsupply" value="">
+</div>
+</center>
+<script src=".jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="./main.js"></script>
+<script type="text/javascript" src="./loading-bar.js"></script>
+
+		<!--start footer -->
+
+	<!--start footer -->
+	<footer class="footer-a">
+		<div class="footer-fist-row">
+
+			<div class="footer-abts pt80 pb80">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="footer-ree-lg text-center">
+								<div class="footer-logo offset-xl-4 col-xl-4">
+									<dive><br><br><br><br></dive>
+									<a href="#"> <img src="../img/logo.png" alt="reeven" class="img"
+											width="100%"> </a>
+								</div>
+
+
+							</div>
+						</div>
+						
+					<div class="col-lg-8 mt40">
+							
+					  <div class="ref-links"><center>
+						  <a href="https://bscscan.com/address/0xd1afd2cfdd9d168bb48b7b5acdffe4c1ae13b753" target="_blank">Bscscan</a>&nbsp; &nbsp;
+						  <a href="https://t.me/Phloxcoin" target="_blank">Telegram</a>&nbsp; &nbsp;
+						  <a href="https://twitter.com/Phloxcoin" target="_blank">twitter</a></center>
+<!--
+<!--
+			<a class="social-icon" href="https://t.me/Phloxcoin" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+			<a class="social-icon" href="https://twitter.com/Phloxcoin" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+			<a class="social-icon" href="https://www.reddit.com/user/Phloxcoin" target="_blank"><i class="fa fa-reddit-alien fa-2x"></i></a>
+			<a class="social-icon" href="https://www.youtube.com/Phloxcoin" target="_blank"><i class="fa fa-youtube  fa-2x "></i></a>
+-->
+							</div>
+							
+							<div class="ref-links">&nbsp;</div>
+									<div style="text-align:center"> <a class="twitter-timeline" data-width="800" data-height="300" data-link-color="#19CF86" href="https://twitter.com/Phloxcoin">Tweets by Phloxcoin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="container ft-cpy">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="ft-copyright">
+						  <p> &nbsp;Copyright © 2022 Phloxcoin. All rights reserved.</p>
+						  <p>Email: Phloxcoin@gmail.com&nbsp;</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+      
+	</footer>
+</body></html>

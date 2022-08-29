@@ -1,0 +1,451 @@
+/* CSS font face */
+
+html {
+  min-height: 100%;
+}
+body {
+font-family: 'Quicksand', sans-serif;
+color:#FFFFFF;
+background: 
+  linear-gradient(#151a1f,#20262b);
+}
+a {
+  color: #efb80b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* CSS for display mobile-desktop */
+
+
+.nomobile2 {
+float:left;
+width:50%;
+
+}
+.cedillalogo {
+position:relative; 
+left:12%;
+float:left;
+}
+.cedilladiv1 {
+position:relative; 
+left:12.4%;
+float:left; 
+height:32px; 
+text-align:center;
+top:11px;
+}
+.connectdiv {
+  position:relative;
+left:78%; 
+float:left; 
+height:60px;
+}
+.wloggedin {
+width:92%;
+  }
+/* swap area */
+.footarea {
+  width:640px;
+  height:550px fit-content;
+  padding-bottom: 40px;
+  text-align:center;
+  position:relative;
+  top:90px;
+  }
+  
+
+.swaparea {
+
+background-color:#303842;
+border:solid;
+border-color:#1d81c4;
+border-radius:25px;
+width:640px;
+height:550px fit-content;
+padding-bottom: 40px;
+text-align:center;
+position:relative;
+top:80px;
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+.swaparea {
+
+background-color:#303842;
+border:solid;
+border-color:#1d81c4;
+border-radius:25px;
+width:360px;
+height:550px fit-content;
+padding-bottom: 75px;
+text-align:center;
+position:relative;
+top:12px;
+
+}
+.footarea {
+
+  width:360px;
+  height:550px fit-content;
+  padding-bottom: 75px;
+  text-align:center;
+  position:relative;
+  top:15px;
+  
+  }
+  
+.nomobile {
+visibility: hidden;
+clear: both;
+float: left;
+width: 15%;
+height: auto;
+display: none;
+}
+.nomobile2 {
+width: 100%;
+}
+.cedillalogo{
+position:relative; 
+left:1%;
+float:left;
+}
+.cedilladiv1 {
+position:relative; 
+left:1.4%;
+float:left; 
+height:32px; 
+text-align:center;
+top:11px;
+  }
+.connectdiv {
+position:relative; 
+left:32%; 
+float:left; 
+height:32px;
+  }
+.wloggedin {
+width:100%;
+  }
+.feetype {
+width:80%;
+  }
+.lockamounttime {
+width:320px;
+float:right;
+  }
+}
+
+/* CSS for buttons */
+
+.connectbutton
+{
+background-color:#181d23;
+border:solid;
+border-color:#1d81c4;
+border-width:3px;
+border-radius:50px;
+color: white;
+padding: 6px 25px;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+font-weight:bold;
+cursor: pointer;
+}
+.connectbutton:hover
+{
+background: 
+  linear-gradient(#181d23,#161616) padding-box, /*this is your grey background*/
+  linear-gradient(to right, #1d81c4, #df19ff) border-box;
+  color: #313149;
+  padding:6px 25px;
+  border: 3px solid transparent;
+  border-radius:50px;
+  display:inline-block;
+color:white;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight:bold;
+  cursor: pointer;
+
+
+}
+
+.approvebutton
+{
+background-color:#3C0;
+border:solid;
+border-color:#3C0;
+border-width:5px;
+border-radius:15px;
+color: white;
+padding: 6px 25px;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+font-weight:bold;
+cursor: pointer;
+}
+.approvebutton:hover
+{
+background-color:#3D9;
+  color: #313149;
+  padding:6px 25px;
+  border: 5px solid transparent;
+  border-radius:15px;
+  display:inline-block;
+color:white;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight:bold;
+  cursor: pointer;
+
+
+}
+
+.swapbutton
+{
+background-color:#086;
+border:solid;
+border-color:#086;
+border-width:5px;
+border-radius:15px;
+color: white;
+padding: 6px 25px;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+font-weight:bold;
+cursor: pointer;
+}
+.swapbutton:hover
+{
+background-color:#0C6;
+  color: #313149;
+  padding:6px 25px;
+  border: 5px solid transparent;
+  border-radius:15px;
+  display:inline-block;
+color:white;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight:bold;
+  cursor: pointer;
+
+
+}
+
+input[type=number] {
+ background-color:#9dc4a5;
+border:solid;
+border-color:#9dc4a5;
+border-width:0.5px;
+border-radius:15px;
+color: #181d23;
+padding: 6px 25px;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+font-weight:bold;
+width: 240px;
+height:32px;
+}
+.paircontract{
+background-color:#9dc4a5;
+position: relative;
+border:solid;
+border-color:#9dc4a5;
+border-width:0.5px;
+border-radius:15px;
+color: #181d23;
+padding: 6px 25px;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+text-decoration: none;
+display: inline-block;
+font-size: 11pt;
+font-weight:bold;
+width: 65%;
+height:auto;
+}
+select
+{
+  background-color:#303842;
+  border:solid;
+  border-color:#1d81c4;
+  border-width:3px;
+  border-radius:50px;
+   color: white;
+   padding: 6px 25px;
+   text-align: center;
+   font-family: 'Quicksand', sans-serif;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 15px;
+   font-weight:bold;
+   cursor: pointer;
+   }
+
+.tokenbutton
+{
+background-color:#036;
+border:solid;
+border-color:#FFF;
+border-width:1px;
+border-radius:50px;
+color: white;
+padding: 6px 30px;
+font-family: 'Quicksand', sans-serif;
+font-size: 15px;
+font-weight:bold;
+cursor: pointer;
+}
+
+option
+{
+background-color:#154658;
+border:solid;
+border-color:#154658;
+border-width:3px;
+border-radius:50px;
+color: white;
+padding: 60px 30px;
+font-family: 'Quicksand', sans-serif;
+font-size: 15px;
+font-weight:bold;
+text-align:left;
+cursor: pointer;
+display:block;
+}
+
+.custom-search {
+  position: relative;
+  width: 300px;
+}
+.custom-search-input {
+  border:solid;
+  border-color:#9dc4a5;
+  border-radius: 15px;
+  padding: 10px 50px 10px 10px; 
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  background-color:#9dc4a5;
+  font-size: 15px;
+  font-family:'Quicksand', 'sans-serif';
+  font-weight: bold;
+  text-align: center;
+  width: 98%;
+}
+.custom-search-botton {
+  position: absolute;
+  height: 50%;
+  right: 12px; 
+  top: 40%;
+  border: 0;
+  background: #154658;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.feetype {
+  width:50%;
+}
+
+.lockamounttime {
+  width:460px;
+  float:right;
+}
+
+/* CSS for trading history */
+
+#locks {
+  font-family: 'Quicksand', sans-serif;
+  font-size:11pt;
+  border-collapse: collapse;
+  width: 100%;
+  position: relative;
+}
+
+#locks td, #locks th {
+  padding: 8px;
+  background: linear-gradient(to bottom, #29313a, #2b343d);
+}
+
+#locks tr:{}
+
+#locks tr:hover {}
+
+#locks th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background: linear-gradient(to bottom, #4a519e, #393f86);
+  color: white;
+}
+
+.gobutton
+{
+background-color:#00ff73;
+border:solid;
+border-color:#00ff73;
+border-width:1px;
+border-radius:15px;
+color: white;
+padding: 6px 25px;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+font-weight:bold;
+cursor: pointer;
+width: 15%;
+position: relative;
+}
+.gobutton:hover
+{
+background-color:#3D9;
+  color: #313149;
+  padding:6px 25px;
+  border: 1px solid transparent;
+  border-radius:15px;
+  display:inline-block;
+color:white;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight:bold;
+  cursor: pointer;
+  width: 15%;
+position: relative;
+}

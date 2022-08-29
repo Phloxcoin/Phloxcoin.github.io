@@ -14,7 +14,7 @@ async function login() {
   document.getElementById("btn-login").value="Logout";
   document.getElementById("btn-login").onclick=logOut;
   document.getElementById("walletaddr").innerHTML = "Logged in : " + user.get('ethAddress').slice(0, 4) + "....." + user.get('ethAddress').slice(38, 42);
-  document.getElementById("managemenu").innerHTML = '<div align="center" style="width:fit-content"><a href="https://cedilla.network/lock/manage/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></br>My Locks</a></div>';
+  document.getElementById("managemenu").innerHTML = '<div align="center" style="width:fit-content"><a href="https://phloxcoin.xyz/lock/manage/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></br>My Locks</a></div>';
   document.getElementById("ethwallet").value = user.get('ethAddress');
   switchNetworkBsc();
 
@@ -153,7 +153,7 @@ bar.set(
 );
 
 const node4 = document.createElement("td");
-node4.innerHTML = '<a href="vault/?id='+allowance2[0]+'"><img src="https://cedilla.network/lock/icons/locked.png" width="24px" height="24px"/></a>';
+node4.innerHTML = '<a href="vault/?id='+allowance2[0]+'"><img src="https://phloxcoin.xyz/locker/Locker_Logo.png" width="24px" height="24px"/></a>';
 document.getElementById("vaultstbody").appendChild(node4);
     console.log(allowance2)
     

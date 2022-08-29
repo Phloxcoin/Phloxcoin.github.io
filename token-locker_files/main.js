@@ -83,7 +83,7 @@ async function getTokenVaults() {
 
   const options = {
     chain: "bsc",
-    address: "0x71F95AEF707a31DD47cf986a38893AB27e348794",
+    address: "0x3B25cC8838EeDF7752968bA1015263336082e611",
     function_name: "GetAllVaultInfo",
     abi: ABI,
     params: { ofToken: document.getElementById("vaultcontract").value },
@@ -108,7 +108,7 @@ async function getTokenVaults() {
 
   const options2 = {
     chain: "bsc",
-    address: "0x71F95AEF707a31DD47cf986a38893AB27e348794",
+    address: "0x3B25cC8838EeDF7752968bA1015263336082e611",
     function_name: "VaultInfo",
     abi: ABI2,
     params: { vaultId: allowance[i] },

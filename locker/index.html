@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lock your liquidity pair/tokens by verified contract. Search liquidity or token locks. Lock liquidity on PancakeSwap">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="Cedilla" />
+<meta name="twitter:title" content="Cedilla Locker" />
+<meta name="twitter:description" content="Lock liquidity now! Get your certificate fast and affordable" />
+<meta name="twitter:image" content="https://cedilla.network/wp-content/uploads/2022/07/Cedilla_Locker_Logo.png" />
+<title>Cedilla Liquidity Locker</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="loading-bar.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js" type="cc5a28182a51acc37bb545d7-text/javascript"></script>
+<script src="https://unpkg.com/moralis-v1@latest/dist/moralis.js" type="cc5a28182a51acc37bb545d7-text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11" type="cc5a28182a51acc37bb545d7-text/javascript"></script>
+</head>
+<body>
+<div style="width:100%; height:auto; margin:1% auto;float:left;">
+<a style="color:#FFFFFF" href="https://cedilla.network"><img width="42px" height="42px" class="cedillalogo" src="https://cedilla.network/bsc/icons/512x512-cedilla.png" />
+<div class="cedilladiv1"><b style="font-size:19px"> Cedilla Locker </br><sup style="font-size:11px; color:#CF0"></sup> </b></div></a>
+<div class="connectdiv"><div style="position:relative; top:1px;">
+<input class="connectbutton" type="button" id="btn-login" value="Connect">
+</div>
+</div>
+</div>
+<div class="wloggedin">
+<div align="right"><font style="position:relative; top:5px;font-weight:bold;" id="walletaddr"></font></div>
+</br>
+<div align="right"><font style="position:relative; top:5px;font-weight:bold;" id="managemenu"></font></div>
+</div>
+<hr style="height:0.01px" width="100%" color="#1d81c4" />
+<center><div align="center" class="swaparea">
+<h3 style="color:#00D111">Explore Locks</h3>
+Search liquidity or token locks by contract
+<hr style="height:0.01px" width="100%" color="#1d81c4" />
+</br>
+<form action="" method="GET">
+<input class="paircontract" onkeyup="if (!window.__cfRLUnblockHandlers) return false; " id="vaultcontract" type="text" value="" name="token" placeholder="Enter pair or token address" autocomplete="off" required="required" data-cf-modified-cc5a28182a51acc37bb545d7-="" />
+<input class="gobutton" type="submit" id="search" value="Go">
+</form>
+</br></br>
+<a target="_blank" id="explink"><img width="16px" height="16px" src="https://cedilla.network/bsc/icons/bscscan.png" /> <font id="tokenmeta"></font></a><font id="ifpair"></font>
+<font id="lockit"></font>
+<h2>Vaults</h2>
+<div style="overflow-x:auto;">
+<table style="column-rule-width: inherit" id="locks">
+<thead>
+<tr>
+<th>Locked Amount</th>
+<th>Unlock Date</th>
+<th>Percent</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody id="vaultstbody">
+</tbody>
+</table>
+</div>
+<input type="hidden" id="ethwallet" value="">
+<input type="hidden" id="maxbalance" value="">
+<input type="hidden" id="vaultnum" value="">
+<input type="hidden" id="decimals" value="">
+<input type="hidden" id="totalsupply" value="">
+</div>
+</center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="cc5a28182a51acc37bb545d7-text/javascript"></script>
+<script type="cc5a28182a51acc37bb545d7-text/javascript" src="/main.js"></script>
+<script type="cc5a28182a51acc37bb545d7-text/javascript" src="/loading-bar.js"></script>
+</body>

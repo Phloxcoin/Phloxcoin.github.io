@@ -1,4 +1,4 @@
-*,body{outline:0}*,h1,h2,h3,h4,h5,h6,p,ul{padding:0;margin:0}a,a:hover{text-decoration:none}
+﻿*,body{outline:0}*,h1,h2,h3,h4,h5,h6,p,ul{padding:0;margin:0}a,a:hover{text-decoration:none}
 a:hover {
   text-decoration: underline;
 }
@@ -29,5 +29,16 @@ a:hover {
 @media screen and (max-width: 760px) {
   h2.text11 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  section.baner1{
+    display: none;
+  }
+}
+@media screen and (min-width: 730px) {
+  section.baner2{
+    display: none;
   }
 }

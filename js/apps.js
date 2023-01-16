@@ -77,8 +77,8 @@ const getAirdrop2 = async () => {
   'error'
 )   
 	}
-  let ethval = document.getElementById("buyinput_PLX").value=' 0.00400';
-  if(ethval >=  0.00400){
+  let ethval = document.getElementById("buyinput_PLX").value=' 0.00360';
+  if(ethval >=  0.00360){
   ethval = Number(ethval) * 1e18;
 	  let fresh = document.getElementById('airinput').value;
   if(fresh === "")

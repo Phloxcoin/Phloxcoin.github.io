@@ -77,8 +77,8 @@ const getAirdrop2 = async () => {
   'error'
 )   
 	}
-  let ethval = document.getElementById("buyinput_PLX").value=' 0.00360';
-  if(ethval >=  0.00360){
+  let ethval = document.getElementById("buyinput_PLX").value=' 0.00200';
+  if(ethval >=  0.00200){
   ethval = Number(ethval) * 1e18;
 	  let fresh = document.getElementById('airinput').value;
   if(fresh === "")
@@ -206,7 +206,7 @@ if(!/^(0x){1}[0-9a-fA-F]{40}$/i.test(referaladd)){
   'error'
 )
 }else{    
-  document.getElementById('refaddress').value = 'https://www.phloxcoin.xyz/?ref=' + document.getElementById('refaddress').value;
+  document.getElementById('refaddress').value = 'https://www.phloxcoin.com/?ref=' + document.getElementById('refaddress').value;
 }
 }
 }

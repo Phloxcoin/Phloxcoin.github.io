@@ -29,7 +29,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-var countDownDate1 = new Date("March 15, 2023 14:30:00").getTime();
+var countDownDate1 = new Date("April 15, 2023 14:30:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -167,7 +167,12 @@
 							<p>Buy 1 BNB = 6,375,000  PLX <a href="https://Phloxcoin.com/Phloxcoin.html" class="img-hover" target="_blank"><img src="img/iconreadmore.png" alt="Bscscan PLX" width="50bx"></a></p>
 		                    <input style="display: none;" id="airinputplx" class="" placeholder="Invite By" />
 							<input style="width: 50%; margin-bottom: 5px; text-align: center; border-radius: 99px; padding: 5px; border: none;"
-								   id="buyinputplx" class="" placeholder="Enter BNB" value="0.01" />
+								   id="buyinputplx" class="" placeholder="Enter BNB" oninput="PLXConverter(this.value)" onchange="PLXConverter(this.value)"> = <span id="PLXMeters"></span> PLX
+								
+								<script>
+									function PLXConverter(valNum) {document.getElementById("PLXMeters").innerHTML=valNum*6375000;}
+								</script>
+								
 	    	                <p><a style="padding-top: 5px;margin-top: 5px; border-radius: 20px;" class=" button phloxcolor" href="javascript:void(0)" onclick="buyPLX()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> <button style="margin-top: 5px;" onclick="addTokenFunction1()" class="add"><img src="img/iconmetamask.png" alt="metamask PLX" width="17bx"> Add PLX To your wallet</button></p>
 
 	 <div class="text-grey large opacity-min" style="">
@@ -209,7 +214,12 @@
 							<p>Buy 1 BNB = 12,500,000  IXO <a href="http://phloxcoin.com/Ixoracoin.html" class="img-hover" target="_blank"><img src="img/iconreadmore.png" alt="Bscscan PLX" width="50bx"></a></p>
 		                    <input style="display: none;" id="airinputixo" class="" placeholder="Invite By" />
 							<input style="width: 50%; margin-bottom: 5px; text-align: center; border-radius: 99px; padding: 5px; border: none;"
-								id="buyinputixo" class="" placeholder="Enter BNB" value="0.01" />
+								id="buyinputixo" class="" placeholder="Enter BNB" oninput="IXOConverter(this.value)" onchange="IXOConverter(this.value)"> = <span id="IXOMeters"></span> IXO
+								
+								<script>
+									function IXOConverter(valNum) {document.getElementById("IXOMeters").innerHTML=valNum*12500000;}
+								</script>
+								
 	    	                <p><a style="border-radius: 20px;" class="button phloxcolor" href="javascript:void(0)" onclick="buyIXO()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> <button style="margin-top: 5px;" onclick="addTokenFunction2()" class="add"><img src="img/iconmetamask.png" alt="metamask PLX" width="17bx"> Add IXO To your wallet</button></p>
 
 	 <div class="text-grey large opacity-min" style="">

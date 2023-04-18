@@ -1,7 +1,7 @@
 // Set the date we're counting down to
 // Set the date we're counting down to January February March April May June July August September October November December
 
-var countDownDate = new Date("April 04, 2023 14:30:00").getTime();
+var countDownDate = new Date("June 15, 2023 14:30:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -29,7 +29,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-var countDownDate1 = new Date("April 15, 2023 14:30:00").getTime();
+var countDownDate1 = new Date("June 30, 2023 14:30:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

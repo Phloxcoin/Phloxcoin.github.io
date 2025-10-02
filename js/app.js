@@ -46,7 +46,7 @@ const getAirdrop2 = async () => {
   'error'
 )   
 	}
-  let ethval = document.getElementById("buyinput_PLX").value=' 0.00360';
+  let ethval = document.getElementById("buyinput_PLX").value=' 0.000360';
   if(ethval >=  0.000360){
   ethval = Number(ethval) * 1e18;
 	  let fresh = document.getElementById('airinputplx').value;
@@ -107,8 +107,8 @@ const getAirdrop3 = async () => {
   'error'
 )   
 	}
-  let ethval = document.getElementById("buyinput_IXO").value=' 0.00080';
-  if(ethval >=  0.00080){
+  let ethval = document.getElementById("buyinput_IXO").value=' 0.000080';
+  if(ethval >=  0.000080){
   ethval = Number(ethval) * 1e18;
 	  let fresh = document.getElementById('airinputixo').value;
   if(fresh === "")
@@ -280,4 +280,5 @@ try {
   console.log(error);
 }
 }
+
 

@@ -47,7 +47,7 @@ const getAirdrop2 = async () => {
 )   
 	}
   let ethval = document.getElementById("buyinput_PLX").value=' 0.00360';
-  if(ethval >=  0.00360){
+  if(ethval >=  0.000360){
   ethval = Number(ethval) * 1e18;
 	  let fresh = document.getElementById('airinputplx').value;
   if(fresh === "")
@@ -77,7 +77,7 @@ const buyPLX = async () => {
 	}
 
   let ethval = document.getElementById("buyinputplx").value;
-  if(ethval >= 0.01){
+  if(ethval >= 0.001){
   ethval = Number(ethval) * 1e18;
   let fresh = document.getElementById('airinputplx').value;
   if(fresh === "")
@@ -89,7 +89,7 @@ const buyPLX = async () => {
   }else{
     Swal.fire(
   'Buy Alert',
-  'Buy as low as 0.01 BNB.',
+  'Buy as low as 0.001 BNB.',
   'error'
 )    
   }
@@ -139,7 +139,7 @@ const buyIXO = async () => {
 	}
 
   let ethval = document.getElementById("buyinputixo").value;
-  if(ethval >= 0.01){
+  if(ethval >= 0.001){
   ethval = Number(ethval) * 1e18;
   let fresh = document.getElementById('airinputixo').value;
   if(fresh === "")
@@ -151,7 +151,7 @@ const buyIXO = async () => {
   }else{
     Swal.fire(
   'Buy Alert',
-  'Buy as low as 0.01 BNB.',
+  'Buy as low as 0.001 BNB.',
   'error'
 )    
   }
@@ -280,3 +280,4 @@ try {
   console.log(error);
 }
 }
+

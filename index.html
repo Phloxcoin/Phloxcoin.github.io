@@ -243,6 +243,26 @@ p{font-size:16px;line-height:1.65}
   .kucoin-spotlight-copy h3{font-size:24px!important}
   .kucoin-spotlight-copy p{font-size:14px!important}
 }
+
+/* v12 — prominent wallet/buy controls + official GeckoTerminal chart */
+.quick-trade{margin-top:18px;position:relative;overflow:hidden;border:1px solid rgba(184,92,255,.20);border-radius:26px;background:linear-gradient(135deg,rgba(184,92,255,.11),rgba(255,255,255,.035) 48%,rgba(35,214,160,.055));box-shadow:0 24px 70px rgba(0,0,0,.24)}
+.quick-trade:before{content:"";position:absolute;width:280px;height:280px;left:-110px;top:-160px;border-radius:50%;background:rgba(184,92,255,.16);filter:blur(48px);pointer-events:none}
+.quick-trade-inner{position:relative;display:grid;grid-template-columns:1.1fr 1.9fr;gap:22px;align-items:center;padding:24px 26px}
+.quick-trade-copy .kicker{display:block;font-size:11px!important;letter-spacing:.16em;font-weight:900;color:#cbb3ed!important;margin-bottom:7px}
+.quick-trade-copy h3{margin:0 0 7px!important;font-size:24px!important;line-height:1.2!important;color:#fff!important}
+.quick-trade-copy p{margin:0!important;font-size:14px!important;line-height:1.55!important;color:#bdb8c7!important}
+.quick-trade-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.quick-action{min-height:78px;padding:14px 13px;border:1px solid rgba(255,255,255,.11);border-radius:17px;background:rgba(5,7,14,.46);color:#fff;text-decoration:none;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:5px;cursor:pointer;transition:transform .2s ease,border-color .2s ease,background .2s ease;box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.quick-action:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.07)}
+.quick-action .qa-icon{font-size:20px;line-height:1;color:#d8b9ff}.quick-action strong{font-size:15px!important;line-height:1.2!important;color:#fff!important}.quick-action small{font-size:11px!important;color:#aaa5b4!important;line-height:1.3!important}
+.quick-action.wallet{border-color:rgba(79,227,165,.24)}.quick-action.wallet .qa-icon{color:#55e6a5}.quick-action.add{border-color:rgba(126,170,255,.24)}.quick-action.add .qa-icon{color:#8eb8ff}.quick-action.buy{border-color:rgba(255,185,82,.26)}.quick-action.buy .qa-icon{color:#ffc16b}
+.quick-wallet-mirror{display:inline-flex;margin-top:11px;padding:7px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.22);font-size:12px!important;color:#b8b3c0!important}.quick-buy-row{grid-column:1/-1;display:flex;gap:10px;align-items:center;margin-top:-2px}.quick-buy-row input{flex:1;min-width:150px;height:44px;padding:0 14px;border-radius:13px;border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.28);color:#fff;font-size:14px;outline:none}.quick-buy-row input::placeholder{color:#777482}.quick-buy-row button{height:44px;padding:0 18px;border:0;border-radius:13px;background:linear-gradient(135deg,#b86cff,#7d43d9);color:#fff;font-weight:900;font-size:14px;cursor:pointer;box-shadow:0 10px 28px rgba(126,67,217,.25)}
+.gecko-chart-wrap{position:relative;width:100%;height:460px;border:1px solid rgba(255,255,255,.10);border-radius:18px;overflow:hidden;background:#11151d;box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.gecko-chart-wrap iframe{display:block;width:100%;height:100%;border:0;background:#11151d}
+.gecko-fallback{position:absolute;left:16px;right:16px;bottom:12px;display:flex;justify-content:flex-end;pointer-events:none}.gecko-fallback a{pointer-events:auto;padding:8px 11px;border-radius:10px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.12);color:#d8c1f2;font-size:11px;text-decoration:none}
+.gecko-caption{margin-top:10px;display:flex;justify-content:space-between;gap:12px;align-items:center;color:#a8a4b0;font-size:12px;line-height:1.4}.gecko-caption strong{color:#fff}.gecko-caption a{color:#caa9ef;text-decoration:none}
+@media(max-width:850px){.quick-trade-inner{grid-template-columns:1fr}.quick-trade-actions{grid-template-columns:repeat(3,1fr)}.gecko-chart-wrap{height:420px}}
+@media(max-width:560px){.quick-trade-inner{padding:20px 17px}.quick-trade-copy h3{font-size:21px!important}.quick-trade-copy p{font-size:13px!important}.quick-trade-actions{grid-template-columns:1fr}.quick-action{min-height:70px}.quick-buy-row{flex-direction:column;align-items:stretch}.quick-buy-row input,.quick-buy-row button{width:100%}.gecko-chart-wrap{height:500px;border-radius:15px}.gecko-caption{display:block}.gecko-caption span{display:block;margin-bottom:5px}}
 </style>
 </head>
 <body>
@@ -259,6 +279,17 @@ p{font-size:16px;line-height:1.65}
 <div class="hero-meta"><span><i class="fa-solid fa-circle-check"></i> Verified contract reference</span><span><i class="fa-solid fa-shield-halved"></i> BNB Chain</span></div>
 <div class="ticker"><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1839" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div></div></div>
 <div class="hero-art"><div class="hero-card"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><img class="coin" src="img/phlox 1024x1024.png" alt="PLX token logo"><div class="token-chip"><span>PLX</span><small>Phloxcoin</small></div><div class="mini-grid"><div class="mini"><small>Network</small><strong>BNB Smart Chain</strong></div><div class="mini"><small>Standard</small><strong>BEP-20</strong></div><div class="mini"><small>Supply</small><strong>360,363,390,398</strong></div><div class="mini"><small>Decimals</small><strong>8</strong></div></div></div></div>
+</div></section>
+<section class="section section-tight quick-trade-section" id="trade-now"><div class="container">
+<div class="quick-trade"><div class="quick-trade-inner">
+<div class="quick-trade-copy"><span class="kicker">PLX QUICK ACCESS</span><h3>Connect, add PLX, or buy PLX — right here.</h3><p>Your wallet controls and the original PLX purchase flow are now visible above the market section, so visitors do not have to search for them.</p><div id="quickWalletMirror" class="quick-wallet-mirror">MetaMask: Not connected</div></div>
+<div class="quick-trade-actions">
+<button class="quick-action wallet" type="button" onclick="connectMetaMask()"><span class="qa-icon">◉</span><strong>Connect Wallet</strong><small>Connect MetaMask</small></button>
+<button class="quick-action add" type="button" onclick="addTokenFunction1()"><span class="qa-icon">＋</span><strong>Add PLX</strong><small>Add token to wallet</small></button>
+<a class="quick-action buy" href="#airdrop"><span class="qa-icon">↗</span><strong>Buy PLX</strong><small>Open presale purchase</small></a>
+</div>
+<div class="quick-buy-row"><input id="quickBuyPLX" inputmode="decimal" placeholder="BNB amount to buy PLX (for example 0.001)"><button type="button" onclick="document.getElementById('buyinputplx').value=document.getElementById('quickBuyPLX').value;buyPLX()">Buy PLX with BNB</button></div>
+</div></div>
 </div></section>
 <section class="section section-tight"><div class="container"><div class="stats"><div class="stat"><small>Token</small><strong>Phloxcoin (PLX)</strong><span>Community utility token</span></div><div class="stat"><small>Chain</small><strong>BNB Smart Chain</strong><span>Chain ID 56</span></div><div class="stat"><small>Distribution</small><strong>Airdrop + Presale</strong><span>Referral supported</span></div><div class="stat"><small>Access</small><strong>Open ecosystem</strong><span>Public contract data</span></div></div></div></section>
 <section class="section" id="about"><div class="container"><div class="section-head"><div><span class="kicker">01 · ABOUT</span><h2>More than a token.</h2></div><p>A premium home for the core Phloxcoin information, with the important content consolidated into one clean experience.</p></div><div class="about-grid"><article class="card"><div class="iconbox"><i class="fa-solid fa-cubes"></i></div><h3>Utility & infrastructure</h3><p>Phloxcoin is built around smart-contract utility, collateral-oriented use cases and flexible integrations for applications that need programmable value.</p></article><article class="card"><div class="iconbox"><i class="fa-solid fa-code-branch"></i></div><h3>Open & extensible</h3><p>The ecosystem leaves room for practical interfaces, open development, integrations and community-led products.</p></article><article class="card"><div class="iconbox"><i class="fa-solid fa-gift"></i></div><h3>Community distribution</h3><p>PLX distribution includes community airdrop and presale participation with referral support from the original platform.</p></article><article class="card"><div class="iconbox"><i class="fa-solid fa-users"></i></div><h3>Community first</h3><p>Follow public blockchain data and community resources, and always verify the official contract before interacting.</p></article></div></div></section>
@@ -317,7 +348,7 @@ p{font-size:16px;line-height:1.65}
 <div class="terminal-head"><div><span class="terminal-live"><i></i> LIVE PLX MARKET</span><h3>On-page price monitor</h3><p id="plxMarketSource">Waiting for public BSC market data…</p></div><div class="contract-pill">PLX · BEP-20 · BSC</div></div>
 <div class="terminal-grid">
 <div class="plx-price-box"><small>PLX / USD</small><strong id="plxPrice">—</strong><span id="plxPriceChange">—</span><div class="price-sub"><span>Liquidity</span><strong id="plxLiquidity">—</strong></div></div>
-<div class="plx-chart-box"><div class="chart-label"><span>BSC DEX LIVE SESSION CHART</span><small id="plxChartState">Collecting samples</small></div><canvas id="plxChart" width="900" height="300" aria-label="PLX live session price chart"></canvas><div class="chart-axis"><span>BSC DEX session start</span><span id="plxChartLast">—</span></div></div>
+<div class="plx-chart-box"><div class="chart-label"><span>PLX/WBNB · GECKOTERMINAL LIVE CHART</span><small>Official pool view</small></div><div class="gecko-chart-wrap"><iframe title="Phloxcoin PLX WBNB live chart on GeckoTerminal" src="https://www.geckoterminal.com/bsc/pools/0x98b949c750b89156179c489204aa76efb14ddce2?embed=1&info=0&swaps=0&grayscale=0" loading="lazy" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe><div class="gecko-fallback"><a href="https://www.geckoterminal.com/bsc/pools/0x98b949c750b89156179c489204aa76efb14ddce2" target="_blank" rel="noopener noreferrer">Open full GeckoTerminal chart ↗</a></div></div><div class="gecko-caption"><span><strong>PLX/WBNB</strong> · PancakeSwap V2 (BSC) · Pool 0x98b9…dce2</span><a href="https://www.geckoterminal.com/bsc/pools/0x98b949c750b89156179c489204aa76efb14ddce2" target="_blank" rel="noopener noreferrer">View pool details ↗</a></div><canvas id="plxChart" width="900" height="300" aria-hidden="true" style="display:none!important"></canvas><div class="chart-axis" style="display:none"><span>BSC DEX session start</span><span id="plxChartLast">—</span></div></div>
 </div>
 <div class="terminal-metrics"><div><small>24H VOLUME</small><strong id="plxVolume">—</strong></div><div><small>24H HIGH</small><strong id="plxHigh">—</strong></div><div><small>24H LOW</small><strong id="plxLow">—</strong></div><div><small>BUYS / SELLS</small><strong id="plxTxns">—</strong></div></div>
 <div class="terminal-foot"><span>Data source: public BSC DEX market feed</span><a href="https://bscscan.com/token/0xd1afd2cfdd9d168bb48b7b5acdffe4c1ae13b753" target="_blank" rel="noopener noreferrer">Verify contract on BscScan ↗</a></div>
@@ -381,6 +412,8 @@ p{font-size:16px;line-height:1.65}
     status.className='wallet-status '+type;
     if(label) label.textContent=text;
     if(action) action.textContent=button;
+    const mirror=document.getElementById('quickWalletMirror');
+    if(mirror){ mirror.textContent=text; mirror.dataset.state=type; }
   }
 
   async function getAccount(){

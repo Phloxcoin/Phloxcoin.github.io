@@ -175,7 +175,10 @@ window.onload=function(){
 
 
  if (ref == null) {} else {
-   (document.getElementById('airinputplx').value = ref , document.getElementById('airinputixo').value = ref);
+   const plxRef = document.getElementById('airinputplx');
+   const ixoRef = document.getElementById('airinputixo');
+   if (plxRef) plxRef.value = ref;
+   if (ixoRef) ixoRef.value = ref;
  }
  }
 
